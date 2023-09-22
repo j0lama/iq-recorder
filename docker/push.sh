@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker image push j0lama/iq-recorder:latest
+docker push princetonpaws/iq-recorder:latest

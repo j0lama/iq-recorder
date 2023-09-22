@@ -8,4 +8,4 @@ fi
 
 LOGS=$(realpath $2)
 
-docker run -ti --privileged --rm -v /dev:/dev -v /proc:/proc -e CONFIG64="$(base64 $1)" -v $LOGS:/uhd/host/build/examples/logs/ j0lama/iq-recorder:latest ./initIQrecorder.sh
+docker run -ti --privileged --rm -v /dev:/dev -v /proc:/proc -e CONFIG64="$(base64 $1)" -v $LOGS:/uhd/host/build/examples/logs/ princetonpaws/iq-recorder:latest ./initIQrecorder.sh
